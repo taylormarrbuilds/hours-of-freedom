@@ -1,0 +1,243 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff"><title>Hours of Freedom</title>
+<meta name="description" content="See how many hours of work a purchase really costs, and the freedom you'd buy back by investing it instead.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Hours of Freedom">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="canonical" href="https://taylormarrbuilds.github.io/hours-of-freedom/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hours of Freedom">
+<meta property="og:title" content="Hours of Freedom">
+<meta property="og:description" content="See how many hours of work a purchase really costs, and the freedom you'd buy back by investing it instead.">
+<meta property="og:url" content="https://taylormarrbuilds.github.io/hours-of-freedom/">
+<meta property="og:image" content="https://taylormarrbuilds.github.io/hours-of-freedom/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hours of Freedom. See how many hours of work a purchase really costs, and the freedom you'd buy back by investing it instead.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hours of Freedom">
+<meta name="twitter:description" content="See how many hours of work a purchase really costs, and the freedom you'd buy back by investing it instead.">
+<meta name="twitter:image" content="https://taylormarrbuilds.github.io/hours-of-freedom/og.png">
+<meta name="twitter:image:alt" content="Hours of Freedom. See how many hours of work a purchase really costs, and the freedom you'd buy back by investing it instead.">
+<style>
+@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/inter-latin-400.woff2) format("woff2")}
+@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/inter-latin-500.woff2) format("woff2")}
+@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/inter-latin-600.woff2) format("woff2")}
+@font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/inter-latin-700.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:300;font-display:swap;src:url(fonts/jetbrains-mono-latin-300.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/jetbrains-mono-latin-400.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/jetbrains-mono-latin-500.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/jetbrains-mono-latin-600.woff2) format("woff2")}
+:root{--bg:#fff;--card:#fff;--surf:#f5f5f5;--soft2:#f8f9fa;--line:#e5e7eb;--txt:#111111;--body:#374151;--mute:#6b7280;--soft:#9ca3af;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}html,body{margin:0;background:#fff;color:var(--body);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:480px;margin:0 auto;padding:max(12px,env(safe-area-inset-top)) 20px 56px}.hide{display:none!important}
+header{display:flex;justify-content:space-between;align-items:center;min-height:52px;margin-bottom:8px}h1{font:600 17px/1.2 Inter;letter-spacing:-.4px;color:var(--txt);margin:0}h1 span{color:var(--txt)}
+.ib{display:grid;place-items:center;background:var(--surf);border:0;color:var(--txt);width:44px;height:44px;font-size:20px;border-radius:12px}
+.card{background:var(--surf);border-radius:16px;padding:16px;margin-bottom:12px}
+.amt{display:flex;align-items:baseline;gap:4px}.amt span{font:500 34px var(--mono);color:var(--soft)}
+.amt input{flex:1;min-width:0;background:none;border:0;color:var(--txt);font:600 44px/1.15 var(--mono);letter-spacing:-1.5px;outline:none;font-variant-numeric:tabular-nums}
+.amt input::placeholder{color:#868b94}
+.peryr{font-size:14px;color:var(--mute);min-height:20px}
+.tg{display:grid;grid-template-columns:1fr 1fr;background:#e9eaec;border-radius:12px;padding:4px;margin-top:10px}
+.tg button{min-height:42px;border:0;border-radius:9px;background:none;color:#4b5563;font:500 15px Inter}.tg button.on{background:#fff;color:var(--txt);box-shadow:0 1px 3px #0000001a}
+.k{font:500 14px/1.4 Inter;color:var(--mute)!important;margin-bottom:2px}
+.ans{border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:12px;background:#fff}
+.hero b,.work b{display:block;font:500 56px/1.1 var(--mono);color:var(--txt);letter-spacing:-2px;font-variant-numeric:tabular-nums}
+.work b{font-size:44px}
+.hero b.sm{font:600 22px/1.3 Inter;letter-spacing:-.3px;color:var(--txt);margin:2px 0}
+.hero .lbl,.work div{font-size:16px;color:var(--body)}.hero .sub{font-size:14px;color:var(--mute);margin-top:4px}
+.whyc{margin-top:4px}
+.why summary{display:flex;align-items:center;justify-content:space-between;min-height:52px;padding:0 18px;border:1px solid var(--line);border-radius:14px;font:500 16px Inter;color:var(--txt);cursor:pointer;list-style:none}
+.why summary::-webkit-details-marker{display:none}.why[open] summary{border-radius:14px 14px 0 0}
+.why ol{margin:0;padding:12px 18px 14px 38px;border:1px solid var(--line);border-top:0;border-radius:0 0 14px 14px;font-size:15px;line-height:1.6}.why li{margin:8px 0}.why li em{font-style:normal;font:500 14px var(--mono);color:var(--txt)}
+.grp{font:600 13px Inter;color:var(--txt);margin:24px 2px 8px}
+.f{display:block;font-size:13px;color:var(--mute);background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-bottom:10px}
+.f:focus-within{border-color:var(--txt);box-shadow:0 0 0 3px #1111110f}
+.f .top{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.f input,.f select{font-variant-numeric:tabular-nums;background:none;border:0;color:var(--txt);font:500 18px var(--mono);padding:4px 0 0;width:100%;outline:none;-webkit-appearance:none}
+.f input::placeholder{color:var(--mute)}select option{background:#fff}
+.tag,.tag.acct,.tag.typed{font:400 12px Inter;color:var(--mute);background:none;padding:0;white-space:nowrap}
+.rs{background:none;border:0;color:var(--txt);font:500 12px Inter;padding:8px 0 8px 10px;margin:-8px 0;cursor:pointer;text-decoration:underline}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.calc{display:flex;justify-content:space-between;font-size:15px;color:var(--mute);margin:0 2px 8px}.calc b{color:var(--txt);font:500 15px var(--mono)}
+.exp{color:var(--mute);font-size:14px;margin:0 2px 10px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px}.chips button{flex:1;min-height:40px;border:1px solid var(--line);background:#fff;color:var(--body);border-radius:10px;font:500 13px Inter;padding:0 8px}.chips button.on{background:var(--txt);border-color:var(--txt);color:#fff}
+#rV,#swrV{color:var(--txt)!important;font:500 16px var(--mono)!important}
+input[type=range]{width:100%;height:32px;padding:0;-webkit-appearance:none;appearance:none;background:none}
+input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:2px;background:linear-gradient(90deg,var(--txt) var(--p,50%),var(--line) var(--p,50%))}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:#fff;margin-top:-9px;box-shadow:0 0 0 1px #d1d5db,0 1px 3px #0000002a}
+input[type=range]::-moz-range-track{height:4px;background:var(--line)}input[type=range]::-moz-range-progress{height:4px;background:var(--txt)}
+.keep{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:15px;color:var(--body)}
+.sw{width:44px;height:26px;border-radius:99px;border:0;background:#d1d5db;position:relative}.sw::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 2px #0003;transition:.15s}.sw.on{background:var(--txt)}.sw.on::after{left:21px}
+.conn{display:flex;justify-content:space-between;align-items:center;background:var(--soft2);border:1px dashed var(--line);border-radius:12px;padding:14px;color:var(--mute);font-size:15px;margin-bottom:4px}
+.btn{width:100%;min-height:52px;border:0;border-radius:12px;background:var(--txt);color:#fff;font:600 16px Inter;margin-top:16px}
+button,summary,select{cursor:pointer}:focus-visible{outline:2px solid var(--txt);outline-offset:2px}.f :focus-visible{outline:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.wl{font-size:15px;color:var(--body);margin-top:2px}.wl b{font:600 15px var(--mono);color:var(--txt);font-variant-numeric:tabular-nums}
+.why ol{list-style:none;counter-reset:s;padding-left:18px!important}.why li{counter-increment:s;position:relative;padding-left:28px}.why li::before{content:counter(s);position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:50%;background:var(--surf);font:500 12px/20px var(--mono);text-align:center;color:var(--txt)}
+.eq{display:block;margin-top:4px;padding:6px 10px;background:var(--soft2);border-radius:8px;font:500 13px/1.5 var(--mono);color:var(--txt);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.ch{border:1px solid var(--line);border-top:0;border-radius:0 0 14px 14px;padding:4px 18px 16px;margin-top:-14px}.chh{font:600 16px/1.35 Inter;color:var(--txt)}.chs{font-size:13px;color:var(--mute);margin-bottom:6px}.ch svg{width:100%;height:auto;display:block}.cl{font:500 11px Inter;fill:#6b7280}
+.lg{display:flex;flex-direction:column;gap:2px;font-size:13px;color:var(--body);margin-top:6px}.lg i{display:inline-block;width:14px;height:3px;border-radius:2px;margin-right:8px;vertical-align:middle}
+.why[open] ol{border-radius:0;border-bottom:0}.why ol:last-child{border-bottom:1px solid var(--line)}
+#scrMain h1{display:flex;align-items:center;gap:8px}#scrMain h1::before{content:"";width:8px;height:8px;border-radius:50%;background:#2563eb;flex:none}
+footer.note{margin:20px 2px 0;font-size:12px;line-height:1.5;color:var(--mute)}
+html{color-scheme:light}
+</style></head><body><main>
+<section id=scrMain>
+ <header><h1>Hours of Freedom</h1><button class=ib onclick="location.hash='settings'" aria-label="Settings"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1.08-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1.08 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button></header>
+ <section class=card>
+  <div class=amt><span>$</span><input id=P type=text inputmode=decimal autocomplete=off placeholder="0" aria-label="Price"></div>
+  <div class=peryr id=peryr></div>
+  <div class="wl hide" id=workC><b id=work>—</b> <span id=workU></span></div>
+  <div class=tg role=group aria-label="How often"><button id=t1 onclick="mode(0)">One-time</button><button id=t2 onclick="mode(1)">Monthly</button></div>
+  <div class="keep hide" id=keepR><span>I'd stop paying this when I retire</span><button class="sw" role=switch aria-checked=true id=keepB aria-label="I'd stop paying this when I retire" onclick="S.keep=!keepOn();save();calc()"></button></div>
+ </section>
+ <section class="ans hero" aria-live=polite><div class=k id=heroK>If you invested it instead</div><b id=hero>—</b><div class=lbl id=heroU></div><div class=sub id=heroS></div></section>
+ <section class="whyc hide" id=whyC><details class=why id=why><summary><span>How we got this</span><span aria-hidden=true>▾</span></summary><ol id=whyL></ol><div id=chart></div></details></section>
+</section>
+<section id=scrSet class=hide>
+ <header><h1 id=setT>Settings</h1><button class=ib onclick="done()" aria-label="Close" id=closeB>✕</button></header>
+ <div id=connRow class=conn><span>Connect accounts</span><span class=tag>Coming soon</span></div>
+ <div class=grp>Take-home</div>
+ <div class=two><label class=f data-k=sal><div class=top>Yearly salary $</div><input id=sal type=text inputmode=decimal autocomplete=off placeholder="e.g. 90000"></label>
+  <label class=f data-k=st><div class=top>State</div><select id=st></select></label></div>
+ <label class="f fr" data-k=hpw><div class=top>Hours worked per week</div><input id=hpw type=text inputmode=decimal autocomplete=off placeholder="40"></label>
+ <label class="f fr" data-k=th><div class=top>Yearly take-home $</div><input id=th type=text inputmode=decimal autocomplete=off placeholder="estimated from salary"></label>
+ <div class=calc><span>Take-home per hour</span><b id=hrV>–</b></div>
+ <div class=grp>Investing</div>
+ <label class=f data-k=inv><div class=top>Current investments $</div><input id=inv type=text inputmode=decimal autocomplete=off placeholder="e.g. 50000"></label>
+ <label class=f data-k=mon><div class=top>Invest per month $</div><input id=mon type=text inputmode=decimal autocomplete=off placeholder="e.g. 1000"></label>
+ <div class="grp fr">Spending</div>
+ <label class="f fr" data-k=spend><div class=top>Yearly spending $</div><input id=spend type=text inputmode=decimal autocomplete=off placeholder="estimated"></label>
+ <div class="exp fr">Not sure? Most Americans spend about 95% of take-home; the U.S. saving rate has been around 4–5%.</div>
+ <div class="chips fr"><button data-p=5>I save a little (5%)</button><button data-p=15>Some (15%)</button><button data-p=30>A lot (30%)</button></div>
+ <label class="f fr" data-k=ret><div class=top>Spending in retirement $</div><input id=ret type=text inputmode=decimal autocomplete=off placeholder="same as today"></label>
+ <div class="exp fr">Your FI target is based on this. Expect to spend less or more once you stop working?</div>
+ <div class="chips fr"><button data-q=80>Less (80%)</button><button data-q=100>Same (100%)</button><button data-q=120>More (120%)</button></div>
+ <div class="grp fr">Assumptions</div>
+ <label class="f fr" data-k=r><div class=top><span>Return <span class=sl style="display:inline"><b id=rV></b></span></span></div><input id=r type=range min=3 max=10 step=0.5><div>S&amp;P 500 average after inflation is about 7%</div></label>
+ <label class="f fr" data-k=swr><div class=top><span>Safe withdrawal rate <b id=swrV ></b></span></div><input id=swr type=range min=3 max=5 step=0.1>
+  <div class=chips style="margin:4px 0 0"><button data-w=3.5>3.5%</button><button data-w=4>4%</button><button data-w=4.5>4.5%</button></div></label>
+ <div class="grp fr">Optional</div>
+ <label class="f fr" data-k=age><div class=top>Your age (shows your FI age)</div><input id=age type=text inputmode=numeric autocomplete=off placeholder="e.g. 35"></label>
+ <button class=btn onclick="done()" id=doneB>Done</button>
+</section>
+<footer class=note>An estimate, not financial advice. Your numbers stay on your device; nothing is sent anywhere.</footer>
+</main><script>
+const PRESET={"key": "hofV12", "data": {}},KEY=PRESET.key;
+const STATES={AL:4,AK:0,AZ:2.5,AR:3.9,CA:6,CO:4.4,CT:5,DE:5,DC:6,FL:0,GA:5.2,HI:7,ID:5.3,IL:4.95,IN:3,IA:3.8,KS:5.2,KY:3.5,LA:3,ME:6,MD:5,MA:5,MI:4.25,MN:6.5,MS:4.4,MO:4.7,MT:5.9,NE:5,NV:0,NH:0,NJ:5.5,NM:4.5,NY:6,NC:4.25,ND:2,OH:3,OK:4.5,OR:8,PA:3.07,RI:4.5,SC:6,SD:0,TN:0,TX:0,UT:4.5,VT:6,VA:5.5,WA:0,WV:4.8,WI:5.3,WY:0};
+const BR=[[12400,.10],[50400,.12],[105700,.22],[201775,.24],[256225,.32],[640600,.35],[1e12,.37]],STD=16100,SSB=184500;
+const $=id=>document.getElementById(id),num=x=>parseFloat(String(x==null?'':x).replace(/[,$\s%]/g,''))||0,MONEY=['sal','th','inv','mon','spend','ret'],fmtIn=v=>{const n=num(v);return n?n.toLocaleString('en-US',{maximumFractionDigits:2}):v};
+const DEF={hpw:'40',r:'7',swr:'4',st:'CA'},K=['sal','st','hpw','th','inv','mon','spend','ret','r','swr','age'];
+$('st').innerHTML=Object.keys(STATES).sort().map(s=>`<option>${s}</option>`).join('');
+let S=Object.assign({v:{},src:{},pct:0,M:0},JSON.parse(JSON.stringify(PRESET.data)),JSON.parse(localStorage[KEY]||'{}'));
+const A=PRESET.acct||{};// k -> {v,date}
+function val(k){return S.v[k]!=null&&S.v[k]!==''?S.v[k]:(A[k]?A[k].v:(DEF[k]||''))}
+function fed(i){let t=0,lo=0,x=Math.max(0,i-STD);for(const[hi,r]of BR){if(x>lo)t+=(Math.min(x,hi)-lo)*r;lo=hi}return t}
+function estTH(){const s=num(val('sal'));if(!s)return 0;return s-fed(s)-Math.min(s,SSB)*.062-s*.0145-Math.max(0,s-STD)*STATES[val('st')]/100}
+function TH(){return num(val('th'))||estTH()}
+function HPW(){return num(val('hpw'))||40}
+function HR(){const t=TH();return t?t/(HPW()*52):0}
+function SPEND(){if(num(val('spend')))return num(val('spend'));const t=TH();if(!t)return 0;
+ if(S.pct)return t*(1-S.pct/100);const m=num(val('mon'));return m?Math.max(0,t-12*m):t*.95}
+function RET(){if(num(val('ret')))return num(val('ret'));return SPEND()*(S.q||100)/100}
+const keepOn=()=>S.keep!==false;
+function srcOf(k){if(k=='ret'&&!(S.v.ret))return SPEND()?[(S.q||100)==100?'Same as today':`${S.q}% of today`,'']:['',''];if(S.v[k]!=null&&S.v[k]!=='')return['Typed','typed'];if(A[k])return['From accounts, '+A[k].date,'acct'];
+ if(k=='th')return estTH()?['Estimated','']:['',''];if(k=='spend')return TH()?['Estimated'+(S.pct?` · saves ${S.pct}%`:''),'']:['',''];
+ if(DEF[k])return['Default',''];return['','']}
+// FI math
+const R=()=>num(val('r'))/100,W=()=>num(val('swr'))/100;
+function fiMonths(B,m,T,owe){owe=owe||0;const g=Math.pow(1+R(),1/12)-1;if(B>=T)return 0;let p=B;for(let n=1;n<=1200;n++){const c=Math.max(0,m-owe);owe=Math.max(0,owe-m);const q=p*(1+g)+(m<0?m:c);if(q>=T)return n-1+(T-p)/(q-p);if(q<=p&&n>12&&!owe)return Infinity;p=q}return Infinity}
+const $$=n=>'$'+Math.round(n).toLocaleString(),MO=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function addM(mo){const d=new Date();d.setTime(d.getTime()+mo*30.4375*864e5);return d}
+const fmM=d=>MO[d.getMonth()]+' '+d.getFullYear(),fmD=d=>MO[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear();
+function nice(x){return x<10?x.toFixed(1):Math.round(x).toLocaleString()}
+function hrs(x){return x<1?[Math.round(x*60)+'','min']:[nice(x),x>=0.95&&x<1.05?'hr':'hrs']}
+function days(d){return d<60?nice(d)+(d>=.95&&d<1.05?' day':' days'):d<730?nice(d/7)+' weeks':(d/365).toFixed(1)+' years'}
+function mode(m){S.M=m;save();calc()}
+function save(){localStorage[KEY]=JSON.stringify(S)}
+function fill(){K.forEach(k=>{const e=$(k);if(document.activeElement===e)return;
+ if(k=='th'){e.value=fmtIn(S.v.th||(A.th?A.th.v:''));e.placeholder=estTH()?'≈ '+Math.round(estTH()).toLocaleString()+' estimated':'estimated from salary';return}
+ if(k=='ret'){e.value=fmtIn(S.v.ret||'');e.placeholder=RET()?'≈ '+Math.round(RET()).toLocaleString()+(S.q&&S.q!=100?` (${S.q}% of today)`:' (same as today)'):'same as today';return}
+ if(k=='spend'){e.value=fmtIn(S.v.spend||'');e.placeholder=SPEND()?'≈ '+Math.round(SPEND()).toLocaleString()+' estimated':'estimated from take-home';return}
+ e.value=MONEY.includes(k)?fmtIn(val(k)):val(k)});
+ document.querySelectorAll('[data-k]').forEach(l=>{const k=l.dataset.k,[t,c]=srcOf(k),top=l.querySelector('.top');let x=top.querySelector('.tags');if(!x){x=document.createElement('span');x.className='tags';top.appendChild(x)}
+  const canReset=S.v[k]!=null&&S.v[k]!==''&&(A[k]||DEF[k]||k=='th'||k=='spend'||k=='ret');
+  x.innerHTML=(t?`<span class="tag ${c}">${t}</span>`:'')+(canReset?`<button class=rs data-r=${k}>↺ reset</button>`:'')});
+ $('rV').textContent=num(val('r'))+'%';$('swrV').textContent=num(val('swr'))+'%';
+ document.querySelectorAll('[data-p]').forEach(b=>b.classList.toggle('on',!S.v.spend&&S.pct==b.dataset.p));
+ document.querySelectorAll('[data-q]').forEach(b=>b.classList.toggle('on',!S.v.ret&&(S.q||100)==b.dataset.q));
+ document.querySelectorAll('input[type=range]').forEach(e=>e.style.setProperty('--p',((e.value-e.min)/(e.max-e.min)*100)+'%'));
+ document.querySelectorAll('[data-w]').forEach(b=>b.classList.toggle('on',num(val('swr'))==b.dataset.w));
+ $('hrV').textContent=HR()?'$'+HR().toFixed(2):'–'}
+function calc(){fill();const P=num($('P').value),M=S.M,hr=HR();
+ $('t1').className=M?'':'on';$('t2').className=M?'on':'';$('t1').setAttribute('aria-pressed',!M);$('t2').setAttribute('aria-pressed',!!M);$('peryr').textContent=M&&P?`${$$(12*P)} per year`:'';
+ const hero=$('hero'),why=$('whyC');why.classList.add('hide');$('keepR').classList.toggle('hide',!M);$('keepB').classList.toggle('on',keepOn());$('keepB').setAttribute('aria-checked',keepOn());$('heroK').classList.toggle('hide',!P);$('heroS').textContent='';
+ if(!P){hero.className='sm';hero.textContent='Type a price';$('heroU').textContent='See what it costs in work and retirement';$('workC').classList.add('hide');return}
+ $('workC').classList.toggle('hide',!hr);
+ if(hr){const[w,u]=hrs(P/hr);$('work').textContent=w;$('workU').textContent=M?`${u} of work every month · ${hrs(12*P/hr).join(' ')} a year`:`${u} of work at $${hr.toFixed(2)}/hr take-home`}
+ const B=num(val('inv')),m=num(val('mon')),sp=SPEND(),rt=RET(),w=W(),T=rt/w,kp=keepOn();
+ if(!sp||!w||(!B&&!m)){hero.className='sm';hero.textContent='Not set yet';$('heroU').textContent='Add your investments and spending in settings';return}
+ const n0=fiMonths(B,m,T),T1=M&&kp?Math.max(0,rt-12*P)/w:T,n1=M?fiMonths(B,m+P,T1):fiMonths(B+P,m,T);
+ const L=[],li=c=>{why.classList.remove('hide');$('whyL').innerHTML=L.map(x=>'<li><span>'+x[0]+'</span>'+(x[1]?'<code class=eq>'+x[1]+'</code>':'')+'</li>').join('');$('chart').innerHTML=c||''};
+ const pct=x=>num(val(x))+'%',hpy=HPW()*52;
+ if(hr){L.push(['Your take-home pay per hour',`${$$(TH())} ÷ (${HPW()} hrs × 52 wks) = $${hr.toFixed(2)}/hr`]);
+  L.push([M?'Hours of work to pay for it each month':'Hours of work to pay for it',`${$$(P)} ÷ $${hr.toFixed(2)}/hr = ${hrs(P/hr).join(' ')}`])}
+ L.push(['Your FI target: what you need invested to live off it',`${$$(rt)}/yr retirement spending ÷ ${pct('swr')} = ${$$(T)}`]);
+ if(n0===Infinity){hero.className='sm';hero.textContent='Not reachable';$('heroU').textContent='At this pace your investments never reach your FI target. Try investing more or check your spending.';li();return}
+ const age=num(val('age')),ag=x=>age?` (age ${(age+x/12).toFixed(1)})`:'';
+ if(n0===0){hero.className='sm';hero.textContent="You're already free";$('heroU').textContent=`Your ${$$(B)} already covers your FI target of ${$$(T)}.`;li();return}
+ const d0=addM(n0),d1=addM(n1),dd=(n0-n1)*30.4375,wh=dd*HPW()/7,[a,u]=hrs(wh);hero.className='';hero.textContent=a;
+ $('heroU').textContent=(u=='min'?'minutes':u=='hr'?'hour':'hours')+' of freedom'+(M?(kp?', if you skip it for good':', while working'):'');
+ const sd=d=>MO[d.getMonth()]+' '+d.getDate(),rng=d1.getFullYear()==d0.getFullYear()?`${sd(d0)} → ${sd(d1)}, ${d0.getFullYear()}`:`${fmD(d0)} → ${fmD(d1)}`;
+ $('heroS').textContent=`Retire ${days(dd)} sooner`;
+ const gr=`growing ${pct('r')}/yr`;
+ L.push(['When you hit it on your current plan',`${$$(B)} today + ${$$(m)}/mo, ${gr} → ${fmD(d0)}${ag(n0)}`]);
+ if(M){if(kp)L.push(["If you stop paying it in retirement, your target drops",`(${$$(rt)} − ${$$(12*P)}) ÷ ${pct('swr')} = ${$$(T1)}`]);
+  L.push([`If you invest the ${$$(P)}/mo instead (it comes out of checking, not your automatic investing)`,`${$$(B)} + (${$$(m)} + ${$$(P)})/mo, ${gr} → ${fmD(d1)}${ag(n1)}`])}
+ else L.push([`If you invest the ${$$(P)} today instead (it comes out of checking, not your automatic investing)`,`(${$$(B)} + ${$$(P)}) + ${$$(m)}/mo, ${gr} → ${fmD(d1)}${ag(n1)}`]);
+ L.push(['How much sooner you retire',`${fmD(d0)} − ${fmD(d1)} = ${nice(dd)} days`]);
+ L.push(['Turn those days into work hours',`${nice(dd)} days × ${HPW()} hrs ÷ 7 = ${hrs(wh).join(' ')} of freedom`]);
+ li(chart(B,m,P,M,T,M&&kp?T1:T,n0,n1,d0,d1,age))}
+function chart(B,m,P,M,T,T2,n0,n1,d0,d1,age){const g=Math.pow(1+R(),1/12)-1,N=Math.ceil(n0)+1,a=[B],b=[M?B:B+P];
+ for(let k=1;k<=N;k++){a.push(a[k-1]*(1+g)+m);b.push(b[k-1]*(1+g)+m+(M?P:0))}
+ const W=340,H=190,l=8,r=8,t=14,bt=24,ym=Math.max(T,b[N])*1.04,X=k=>l+(W-l-r)*k/N,Y=v=>t+(H-t-bt)*(1-v/ym),
+  pth=s=>s.map((v,k)=>(k?'L':'M')+X(k).toFixed(1)+' '+Y(v).toFixed(1)).join(''),
+  sh=v=>v>=1e6?'$'+(v/1e6).toFixed(2)+'M':'$'+Math.round(v/1e3)+'k',y0=new Date().getFullYear(),ea=a[Math.min(N,Math.round(n0))],eb=b[Math.min(N,Math.round(n0))],gap=eb-ea;
+ const when=age?`at age ${(age+n0/12).toFixed(0)}`:`by ${fmM(d0)}`,
+  head=M?`Investing ${$$(P)}/mo instead puts you ${$$(gap)} ahead ${when}`:`The ${$$(P)} grows to ${$$(gap)} ${when}`,
+  desc=`Line chart of your portfolio from ${$$(B)} today to your ${sh(T)} FI target. Current plan reaches it ${fmD(d0)}; investing the money instead reaches it ${fmD(d1)}. ${head}.`;
+ const t2=T2!=T?`<line x1=${l} x2=${W-r} y1=${Y(T2)} y2=${Y(T2)} stroke="#2563eb" stroke-dasharray="3 4" opacity=".6"/>`:'';
+ return `<div class=ch><div class=chh>${head}</div><div class=chs>Your portfolio over time</div>
+ <svg viewBox="0 0 ${W} ${H}" role=img aria-labelledby="chT chD"><title id=chT>Your portfolio over time</title><desc id=chD>${desc}</desc>
+ <line x1=${l} x2=${W-r} y1=${Y(T)} y2=${Y(T)} stroke="#9ca3af" stroke-dasharray="4 4"/>${t2}
+ <text x=${l} y=${Y(T)-6} class=cl>FI target ${sh(T)}</text>
+ <path d="${pth(a)}" fill=none stroke="#9ca3af" stroke-width=2.5 />
+ <path d="${pth(b)}" fill=none stroke="#2563eb" stroke-width=2 />
+ <circle cx=${X(n0)} cy=${Y(T)} r=4.5 fill="#fff" stroke="#6b7280" stroke-width=2 /><circle cx=${X(n1)} cy=${Y(T2)} r=4 fill="#2563eb"/>
+ <text x=${l} y=${H-6} class=cl>${y0}</text><text x=${W-r} y=${H-6} class=cl text-anchor=end>${d0.getFullYear()}</text></svg>
+ <div class=lg><span><i style="background:#9ca3af"></i>Current plan · ${fmD(d0)}</span><span><i style="background:#2563eb"></i>Invest it instead · ${fmD(d1)}</span></div></div>`}
+function done(){if(!HR()){$('sal').focus();return}S.setup=1;save();location.hash='';show()}
+function show(){const set=location.hash=='#settings'||!S.setup,first=!S.setup;$('scrMain').classList.toggle('hide',set);$('scrSet').classList.toggle('hide',!set);
+ document.querySelectorAll('.fr').forEach(e=>e.classList.toggle('hide',first));$('connRow').classList.toggle('hide',!!PRESET.private);
+ $('setT').textContent=first?'Four quick questions':'Settings';$('closeB').classList.toggle('hide',first);$('doneB').textContent=first?'Start':'Done';calc()}
+K.forEach(k=>$(k).addEventListener('input',()=>{const v=$(k).value;if(k=='spend'&&v)S.pct=0;S.v[k]=v;if(v===''&&!A[k]&&!DEF[k])delete S.v[k];save();calc()}));
+document.addEventListener('click',e=>{const t=e.target;if(t.dataset.r){e.preventDefault();delete S.v[t.dataset.r];save();calc()}
+ if(t.dataset.p){S.pct=+t.dataset.p;delete S.v.spend;save();calc()}if(t.dataset.q){S.q=+t.dataset.q;delete S.v.ret;save();calc()}if(t.dataset.w){e.preventDefault();S.v.swr=t.dataset.w;save();calc()}});
+$('P').addEventListener('input',()=>{const e=$('P');if(/[$\s]/.test(e.value))e.value=e.value.replace(/[$\s]/g,'');calc()});K.forEach(k=>$(k).addEventListener('blur',()=>calc()));$('P').addEventListener('blur',()=>{$('P').value=fmtIn($('P').value)});window.onhashchange=show;
+const Q=new URLSearchParams(location.search);if(Q.get('p'))$('P').value=fmtIn(Q.get('p'));if(Q.get('m'))S.M=+Q.get('m');if(Q.get('open'))$('why').open=true;if(Q.get('setup'))S.setup=1;show();
+</script>
+<script>
+/* Offline support. The script URL is relative, so the scope stays under /hours-of-freedom/. */
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(function () {});
+}
+</script>
+</body></html>
