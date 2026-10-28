@@ -1,7 +1,7 @@
 {
   "name": "Hours of Freedom",
   "short_name": "Hours of Freedom",
-  "description": "See how many hours of work a purchase really costs, and the freedom you'd buy back by investing it instead.",
+  "description": "Type a price and see how far it pushes your retirement back, or how far investing it pulls retirement forward.",
   "lang": "en",
   "id": "./",
   "start_url": "./",

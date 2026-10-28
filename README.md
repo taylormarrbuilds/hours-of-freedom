@@ -1,8 +1,8 @@
 # Hours of Freedom
 
-See how many hours of work a purchase really costs, and how much sooner you could retire if you invested that money instead.
+One sentence: spending an amount pushes your retirement back, investing it pulls retirement forward, given your assumptions.
 
-You type a price. The app turns it into hours of work at your take-home pay, then estimates the freedom you would buy back by investing it. The first visit asks four questions — salary, state, what you have invested, and what you invest each month — and starts blank. Everything after that stays in this browser (`localStorage`). Nothing is sent anywhere.
+Type an amount, tap the first word to switch between Spending and Investing, and tap the frequency to cycle from one time to annually. Tap "your assumptions" to change salary, state, age, investments, return, and withdrawal rate; it starts with generic defaults. The ⓘ button shows the math and a chart. Everything stays in this browser (`localStorage`). Nothing is sent anywhere.
 
 This is an estimate, not financial advice.
 
@@ -44,4 +44,4 @@ Until that setting is saved, the deploy has nowhere to publish and the workflow 
 
 ## Fonts
 
-Inter and JetBrains Mono ship in `fonts/` so the page does not call out to Google, and so offline mode still uses the same type. Both are under the SIL Open Font License. See `fonts/LICENSE-inter.txt` and `fonts/LICENSE-jetbrains-mono.txt`.
+Poppins ships in `fonts/` so the page does not call out to Google, and so offline mode still uses the same type. It is under the SIL Open Font License. See `fonts/LICENSE-poppins.txt`.

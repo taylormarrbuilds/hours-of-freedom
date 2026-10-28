@@ -1,6 +1,6 @@
 /* Offline shell for Hours of Freedom.
    Paths are relative to this file so the scope stays inside /hours-of-freedom/. */
-const CACHE = 'hof-shell-v1';
+const CACHE = 'hof-shell-v2';
 const ASSETS = [
   './',
   './index.html',
@@ -13,14 +13,9 @@ const ASSETS = [
   './icons/icon-maskable-192.png',
   './icons/icon-maskable-512.png',
   './icons/apple-touch-icon.png',
-  './fonts/inter-latin-400.woff2',
-  './fonts/inter-latin-500.woff2',
-  './fonts/inter-latin-600.woff2',
-  './fonts/inter-latin-700.woff2',
-  './fonts/jetbrains-mono-latin-300.woff2',
-  './fonts/jetbrains-mono-latin-400.woff2',
-  './fonts/jetbrains-mono-latin-500.woff2',
-  './fonts/jetbrains-mono-latin-600.woff2'
+  './fonts/poppins-latin-400.woff2',
+  './fonts/poppins-latin-500.woff2',
+  './fonts/poppins-latin-600.woff2'
 ];
 
 self.addEventListener('install', (event) => {
